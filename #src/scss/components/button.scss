@@ -1,0 +1,29 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  @include ease-def;
+  border-radius: 5px;
+
+  .text {
+    text-align: center;
+    @include ease-def;
+  }
+
+}
+
+.button.button--red {
+  background-color: var(--red_1);
+  color: #fff;
+
+  &:hover {
+    background-color: var(--red_2);
+  }
+} 
+
+
+

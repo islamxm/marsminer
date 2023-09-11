@@ -1,0 +1,48 @@
+.burger {
+  width: calc(15px + 15px);
+  display: flex;
+  flex-wrap: wrap;
+
+  span {
+    background-color: #fff;
+    border-radius: 1px;
+    @include ease-def;
+
+    &:nth-child(1) {
+      width: 15px;
+      height: 15px;
+      
+      border-radius: 1px 0 0 1px;
+    }
+
+    &:nth-child(2) {
+      width: 15px;
+      height: 15px;
+      
+      border-radius: 0 1px 1px 0;
+    }
+
+    &:nth-child(3) {
+      width: 18px;
+      height: 8px;
+      margin: 0 auto;
+      margin-top: 7px;
+    }
+  }
+
+  &:hover {
+    span {
+
+      &:nth-child(1) {
+        border-radius: 1px;
+        transform: translateX(-3.5px);
+      }
+
+      &:nth-child(2) {
+        border-radius: 1px;
+        transform: translateX(3.5px);
+      }
+      
+    }
+  }
+}
