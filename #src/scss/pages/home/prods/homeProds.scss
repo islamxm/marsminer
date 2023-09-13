@@ -1,0 +1,57 @@
+.homeProds {
+  &__in {
+    padding: 40px 0;
+  }
+
+  &__tabs {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__tab {
+    padding: 14px 5px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 36px;
+    @include ease-def;
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 7px;
+      background-color: var(--red_1);
+      content: '';
+      @include ease-def;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__tab.active {
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -37.5px;
+    margin-right: -37.5px;
+  }
+
+  &__item {
+    width: calc((100% / 4) - 75px);
+    margin: 0 37.5px;
+    margin-bottom: 70px;
+  }
+}

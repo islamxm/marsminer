@@ -9,9 +9,13 @@
   @include ease-def;
   border-radius: 5px;
 
-  .text {
+  &__text {
     text-align: center;
     @include ease-def;
+  }
+
+  &:active {
+    transform: scale(0.9);
   }
 
 }

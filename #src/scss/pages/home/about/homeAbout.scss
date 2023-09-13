@@ -1,0 +1,55 @@
+.homeAbout {
+
+  &__in {
+    padding: 40px 0;
+  }
+
+  &__title {
+    margin-bottom: 100px;
+    color: var(--red_1);
+    font-size: 96px;
+  }
+
+  &__body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    &_main {
+      flex: 0 0 50%;
+      margin: 0 20px;
+
+      &_text {
+        margin-bottom: 40px;
+      }
+
+      &_action {
+        button {
+          max-width: 255px;
+          width: 100%;
+        }
+      }
+    }
+
+
+    &_list {
+      flex: 0 0 50%;
+      margin: 0 20px;
+
+      &_item {
+        margin-bottom: 65px;
+
+        &_value {
+          font-size: 32px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        &_label {
+          
+        }
+      }
+    }
+  }
+}

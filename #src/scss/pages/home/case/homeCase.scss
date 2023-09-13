@@ -1,0 +1,43 @@
+.homeCase {
+  &__in {
+    padding: 40px 0;
+  }
+
+  &__title {
+    margin-bottom: 100px;
+    font-size: 96px;
+  }
+
+  &__body {
+    display: flex;  
+    margin-left: -10px;
+    margin-right: -10px;
+
+    &_item {
+      width: calc((100% / 3) - 20px);
+      margin: 0 10px;
+      border-radius: 11px;
+      overflow: hidden;
+
+      &_top {
+        height: 65px;
+        // background-color: #9D2320;
+        background-image: url('../../../../img/img/homeCase-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+      }
+      &_label {
+        min-height: 162px;
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: #D2D2D2;
+        font-size: 32px;
+        font-weight: 700;
+        color: #000;
+      }
+    }
+  }
+}

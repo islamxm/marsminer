@@ -1,0 +1,113 @@
+.homePas {
+
+  &__in {
+    padding: 40px 0;
+  }
+  &__title {
+    text-align: center;
+    color: var(--red_1);
+    margin-bottom: 90px;
+    font-size: 96px;
+  }
+
+  &__body {
+
+    &_main {
+      display: flex;
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-bottom: 40px;
+
+      &_item {
+        display: flex;
+        align-items: flex-start;
+        width: calc((100% / 3) - 40px);
+        margin: 0 20px;
+
+        &_num {
+          margin-right: 20px;
+          font-size: 32px;
+          font-weight: 700;
+        }
+        &_body {
+
+        }
+      }
+    }
+
+    &_vals {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-bottom: 50px;
+
+      &_item {
+        margin: 0 15px;
+        &:last-child {
+          color: var(--red_1);
+        }
+        &_value { 
+          font-size: 32px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        &_label {
+          font-weight: 700;
+          max-width: 190px;
+          width: 100%;
+        }
+      }
+    }
+
+    &_action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include ease-def;
+
+        &:hover {
+          .homePas__body_action_btn_label {
+            color: var(--red_1);
+          }
+          .homePas__body_action_btn_icon {
+            svg {
+              rect {
+                fill: var(--red_1) !important;
+                stroke: var(--red_1);
+              }
+            }
+          }
+        }
+
+        &_label {
+          text-align: center;
+          font-size: 16px;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+          @include ease-def;
+        }
+
+        &_icon {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include ease-def;
+          svg {
+            rect,path {
+              @include ease-def;
+            }
+          }
+        }
+      }
+    }
+  }
+}

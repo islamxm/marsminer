@@ -1,5 +1,4 @@
 .header {
-  border: 1px solid red;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,7 +36,6 @@
 
   &__part {
     width: 100%;
-    border: 1px solid green;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -62,7 +60,6 @@
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
-        border: 1px solid red;
         @include ease-def;
       }
 
@@ -71,7 +68,6 @@
         width: 85px;
         // background-color: var(--red_2);
         display: none;
-        border: 1px solid red;
       }
     }
 
@@ -79,7 +75,6 @@
       height: 100%;
       display: flex;
       align-items: center;
-      border: 1px solid red;
       @include ease-def;
 
       &_btn {
