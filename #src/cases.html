@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./html/global/head.html', {
+  "title": 'Cases - Marsminer'
+})
+<body>
+  @@include('./html/components/header.html')
+  <main>
+    <section>
+      @@include('./html/pages/cases/head/casesHead.html')
+    </section>
+    <section>
+      @@include('./html/pages/cases/main/casesMain.html')
+    </section>
+    <section>
+      @@include('./html/pages/home/fb/homeFb.html')
+    </section>
+    <section>
+      @@include('./html/pages/home/tg/homeTg.html')
+    </section>
+  </main>  
+  @@include('./html/components/footer.html')
+  <script src="js/app.min.js"></script>
+</body>
+</html>

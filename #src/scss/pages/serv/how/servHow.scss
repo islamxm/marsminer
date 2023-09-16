@@ -1,0 +1,34 @@
+.servHow {
+
+  &__in {
+    padding: 40px 0;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 33px;
+    margin-bottom: 40px;
+  }
+
+  &__body {
+    display: flex;
+    margin-left: -50px;
+    margin-right: -50px;
+
+    &_item {
+      margin: 0 50px;
+      width: calc((100% / 4) - 100px);
+
+      &_num {
+        margin-bottom: 10px;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: normal;
+      }
+      &_text {
+        
+      }
+    }
+  }
+}

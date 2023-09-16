@@ -1,0 +1,118 @@
+.footer {
+  &__main {
+    background-color: #101010;
+
+    &_in {
+      padding: 100px 0 20px;
+      
+    }
+
+    &_body {
+      max-width: 1130px;
+      width: 100%;
+      margin: 0 auto;
+      border: 19px solid var(--red_1);
+      padding: 30px 80px;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      &_title {
+        position: absolute;
+        background-color: #101010;
+        
+      }
+
+      &_part {
+        &:nth-child(1) {
+          padding-right: 20px;
+        }
+        &:nth-child(2) {
+          padding-left: 20px;
+        }
+
+        &_item {
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          font-size: 24px;
+          line-height: 31px;
+
+          a {
+            @include ease-def;
+
+            &:hover {
+              color: var(--red_1);
+            }
+          }
+        }
+
+      }
+    }
+
+    &_ex {
+      max-width: 700px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      &_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &_item {
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: normal;
+
+        a {
+          @include ease-def;
+
+          &:hover {
+            color: var(--red_1);
+          }
+        }
+      }
+    }
+
+    &_cn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      max-width: 1130px;
+      width: 100%;
+      margin: 0 auto;
+
+      &_item {
+        width: 25px;
+        height: 25px;
+        margin-left: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      &_item.footer__main_cn_item--tg {
+        background-image: url('../../img/icons/tg-min.svg');
+      }
+      &_item.footer__main_cn_item--wa {
+        background-image: url('../../img/icons/whatsapp.svg');
+      }
+      &_item.footer__main_cn_item--tel {
+        background-image: url('../../img/icons/tel.svg');
+      }
+    }
+  }
+
+  &__ex {
+    background-color: #000;
+
+    &_in {
+      padding: 20px 0;
+      color: #9B9B9B;
+    }
+  }
+}

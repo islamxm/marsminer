@@ -1,0 +1,28 @@
+.servFaq {
+
+  &__head {
+
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__body {
+
+    &_item {
+      border-top: 1px solid #fff;
+
+      &_head {
+        padding: 30px 0;
+      }
+
+      &_body {
+        &_text {
+          
+        }
+      }
+    }
+
+  }
+}

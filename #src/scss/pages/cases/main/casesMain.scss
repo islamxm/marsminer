@@ -1,0 +1,114 @@
+.casesMain {
+
+  &__in {
+    padding: 40px 0;
+  }
+
+  &__title {
+    color: var(--red_1);
+    font-size: 96px;
+    line-height: 100%;
+    margin-bottom: 55px;
+  }
+
+  &__body {
+    
+  }
+
+  &__item {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    &_top {
+      background-color: #9D2320;
+      height: 90px;
+      background-image: url('../../../../img/img/homeCase-bg.png');
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+    }
+
+    &_body {
+      background-color: #D2D2D2;
+      color: #000;
+      padding: 25px 55px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      &_main {
+        width: 100%;
+        padding-right: 30px;
+      }
+
+      &_vals {
+        display: flex;
+        margin-top: -40px;
+
+        &_item {
+          min-height: 125px;
+          background-color: #fff;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0 5px;
+          text-align: center;
+
+          &_name {
+            font-size: 15px;
+            line-height: normal;
+            font-weight: 700;
+            text-align: left;
+          }
+          &_value {
+            font-size: 36px;
+            line-height: normal;
+            font-weight: 700;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    &_btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &_text {
+        @include ease-def;
+        text-align: center;
+        letter-spacing: 2.986px;
+        text-transform: uppercase;
+      }
+
+      &_icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          rect {
+            @include ease-def;
+          }
+        }
+      }
+
+      &:hover {
+        .casesMain__action_btn_text {
+          color: var(--red_1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.fwProfit {
+
+  &__in {
+    padding: 40px 0;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: 96px;
+    line-height: 100px;
+  }
+
+  &__subtitle {
+    margin-bottom: 100px;
+  }
+
+  &__body {
+
+    &_main {
+      margin-bottom: 150px;
+
+      &_table {
+        border-collapse: collapse;
+        width: 100%;
+
+        &_row {
+
+          
+        }
+
+        &_item {
+          border:1px solid #fff;
+
+          &_in {
+            padding: 30px;
+          }
+
+          &_head {
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: normal;
+            margin-bottom: 18px;
+          }
+
+          &_name {
+            color: #E44040;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: normal;
+            margin-bottom: 25px;
+          }
+          &_text {
+            font-size: 24px;
+            line-height: 31px;
+            margin-bottom: 10px;
+
+            span {
+              color: #E44040;
+            }
+          }
+        }
+
+        &_item.fwProfit__body_main_table_item--total {
+          min-width: 606px;
+          background-color: #942121;
+
+          .fwProfit__body_main_table_item_in {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .fwProfit__body_main_table_item_title {
+              text-align: center;
+              font-size: 64px;
+              line-height: normal;
+              margin-bottom: 25px;
+              font-weight: 700;
+              position: relative;
+              padding-top: 90px;
+              &:after {
+                position: absolute;
+                top: 0;
+                left: calc(50% - 35px);
+                width: 70px;
+                height: 70px;
+                content: '';
+                background-image: url('../../../../img/icons/profitMain-table-icon.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &_list {
+
+    }
+
+    &_item {
+      display: flex;
+
+      &_img {
+        height: 615px;
+        width: 545px;
+        border:12px solid #fff;
+        flex: 0 0 auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          display: flex;
+        }
+      }
+
+      &_info {
+        padding-left: 80px;
+
+        &_name {
+          background-color: #942121;
+          padding: 5px;
+          font-size: 96px;
+          line-height: 100px;
+          margin-bottom: 50px;
+        }
+
+        &_body {
+
+          &_head {
+            margin-bottom: 50px;
+            font-size: 24px;
+            line-height: 31px;
+          }
+
+          &_table {
+            max-width: 630px;
+            width: 100%;
+            border-bottom: 1px solid #4D4D4D;
+            
+            &_row {
+
+            }
+
+            &_item {
+              padding: 20px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
