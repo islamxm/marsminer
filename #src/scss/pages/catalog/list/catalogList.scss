@@ -1,0 +1,15 @@
+.catalogList {
+  &__in {
+    padding: 40px 0;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    // margin: 0 5px;
+    margin-bottom: 20px;
+  }
+}

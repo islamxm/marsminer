@@ -1,0 +1,18 @@
+.catalogKeywords {
+  &__in {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__item {
+    margin-right: 40px;font-weight: 700;
+    @include ease-def;
+    cursor: pointer;
+    
+    &:hover {
+      color: var(--red_1);
+    }
+  }
+}

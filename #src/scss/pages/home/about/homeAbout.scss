@@ -6,8 +6,6 @@
 
   &__title {
     margin-bottom: 100px;
-    color: var(--red_1);
-    font-size: 96px;
   }
 
   &__body {
@@ -48,6 +46,62 @@
         }
         &_label {
           
+        }
+      }
+
+      &_action {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .homeAbout {
+    &__in {
+      padding: 25px 0;
+    }
+
+    &__title {
+      margin-bottom: 45px;
+    }
+    &__body {
+      flex-wrap: wrap;
+
+      &_main {
+        width: 100%;
+        flex: unset;
+
+        &_action {
+          display: none;
+        }
+
+      }
+
+      &_list {
+        width: 100%;
+        flex: unset;
+
+        &_item {
+          margin-bottom: 30px;
+
+          &_value {
+            font-size: 21px;line-height: 30px;
+            margin-bottom: 5px;
+          }
+          &_label {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+
+        &_action {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            width: 100%;
+          }
         }
       }
     }

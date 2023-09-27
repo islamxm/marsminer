@@ -1,0 +1,57 @@
+.section-title {
+  font-family: 'undertale_battle_font';
+  font-size: 96px;
+  line-height: 100px;
+  color: #fff;
+}
+
+.section-title.section-title-red {
+  color: var(--red_1);
+}
+
+.section-title.section-title-black {
+  color: #000;
+}
+
+.section-title.section-title-mirror {
+  position: relative;
+
+  .section-title-main {
+    position: relative;
+    z-index: 2;
+  }
+
+  .mirror {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    font-size: 96px;
+    line-height: 100px;
+    color: #000;
+    text-shadow: 0px 0px 0px #fff;
+  }
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+.section-title.right {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .section-title.section-title-mirror {
+    .mirror {
+      font-size: 40px;
+      line-height: 45px;
+      bottom: -10px;
+    }
+  }
+}

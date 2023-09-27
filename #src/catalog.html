@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./html/global/head.html', {
+  "title": 'Каталог - Marsminer'
+})
+<body>
+  @@include('./html/components/header.html')
+  <main>
+    <section>
+      @@include('./html/pages/catalog/head/catalogHead.html')
+    </section>
+    <section>
+      @@include('./html/pages/catalog/list/catalogList.html')
+    </section>
+    <section>
+      @@include('./html/pages/catalog/vendors/catalogVendors.html')
+    </section>
+    <section>
+      @@include('./html/pages/catalog/keywords/catalogKeywords.html')
+    </section>
+    <section>
+      @@include('./html/pages/catalog/body/catalogBody.html')
+    </section>
+  </main>  
+  @@include('./html/components/footer.html')
+  <script src="js/app.min.js"></script>
+</body>
+</html>

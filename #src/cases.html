@@ -6,8 +6,13 @@
 <body>
   @@include('./html/components/header.html')
   <main>
-    <section>
-      @@include('./html/pages/cases/head/casesHead.html')
+    <section class="first-block">
+      <!-- @@include('./html/pages/cases/head/casesHead.html') -->
+      @@include('./html/components/pageHead.html', {
+        "title": "Как построить автономный бизнес на майнинге?",
+        "subtitle": "Помогаем реализовать проекты любой сложности",
+        "buttonText": "получить консультацию"
+      })
     </section>
     <section>
       @@include('./html/pages/cases/main/casesMain.html')

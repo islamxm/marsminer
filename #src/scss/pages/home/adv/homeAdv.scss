@@ -90,3 +90,44 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .homeAdv {
+
+    &__in {
+      padding: 25px 0;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin-bottom: 15px;
+      min-height: 220px;
+      padding: 30px 20px;
+
+      &_icon {
+        margin-left: 0;
+        justify-content: center;
+      }
+      &:after {
+        display: none;
+      }
+
+      &:hover {
+        transform: scale(1);
+        // box-shadow: 0 0 60px rgba(#fff, .5);
+  
+        
+  
+        .homeAdv__item_icon {
+          svg {
+            filter: none;
+            path, rect {
+              fill: var(--red_1);
+              stroke: var(--red_1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

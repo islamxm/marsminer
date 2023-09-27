@@ -5,9 +5,6 @@
   }
 
   &__title {
-    color: var(--red_1);
-    font-size: 96px;
-    line-height: 100%;
     margin-bottom: 55px;
   }
 
@@ -107,6 +104,63 @@
       &:hover {
         .casesMain__action_btn_text {
           color: var(--red_1);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .casesMain {
+
+    &__in {
+      padding: 25px 0;
+      padding-bottom: 25px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__item {
+
+      &_top {
+        height: 42px;
+      }
+
+      &_body {
+        padding: 15px;
+
+        &_main {
+          &_title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+          }
+          &_text {
+            display: none;
+          }
+        }
+
+        &_vals {
+          margin-top: 0;
+
+          &_item {
+            min-height: 63px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &_name {
+              font-size: 7.5px;
+              line-height: normal;
+              margin-bottom: 0;
+            }
+
+            &_value {
+              font-size: 18px;
+              line-height: 18px;
+            }
+          }
         }
       }
     }

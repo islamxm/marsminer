@@ -6,6 +6,13 @@
 <body>
   @@include('./html/components/header.html')
   <main>
+    <section class="first-block">
+      @@include('./html/components/pageHead.html', {
+        "title": "Прошивки для разгона ASIC майнеров",
+        "subtitle": "Майнинг под ключ от компании №1 в России и СН",
+        "buttonText": "получить консультацию"
+      })
+    </section>
     <section>
       @@include('./html/pages/fw/main/fwMain.html')
     </section>

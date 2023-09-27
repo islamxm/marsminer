@@ -11,9 +11,7 @@
     width: 50%;
 
     &_title {
-      font-size: 96px;
-      color: var(--red_1);
-      line-height: 100px;
+      
     }
 
     &_img {
@@ -56,6 +54,37 @@
 
         }
 
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .keyMain {
+
+    &__in {
+      padding: 25px 0;
+      flex-wrap: wrap;
+    }
+
+    &__main {
+      width: 100%;
+
+      &_img {
+        height: unset;
+      }
+    }
+
+    &__list {
+      width: 100%;
+      padding-left: 0;
+
+      &_item {
+        &_body {
+          &_text {
+            font-size: 16px;
+          }
+        }
       }
     }
   }

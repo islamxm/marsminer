@@ -116,3 +116,45 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+
+    &__main {
+
+      &_in {
+        
+      }
+
+      &_body {
+        padding: 30px;
+        flex-wrap: wrap;
+
+        &_part {
+          padding: 0 !important;
+          width: 100%;
+        }
+      }
+
+      &_ex {
+        &_list {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        &_item {
+          margin-bottom: 10px;
+          text-align: left;
+        }
+      }
+
+      &_cn {
+        justify-content: center;
+
+        &_item {
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}

@@ -4,10 +4,7 @@
     padding: 40px 0;
   }
   &__title {
-    text-align: center;
-    color: var(--red_1);
     margin-bottom: 90px;
-    font-size: 96px;
   }
 
   &__body {
@@ -105,6 +102,54 @@
             rect,path {
               @include ease-def;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .homePas {
+
+    &__in {
+      padding: 25px 0;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &__body {
+      
+
+      &_main {
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+        border-bottom: 1px solid #fff;
+
+        &_item {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 15px;
+        }
+      }
+
+      &_vals {
+        flex-wrap: wrap;
+
+        &_item {
+          width: calc((100% / 2) - 30px);
+          margin-bottom: 15px;
+
+          &_value {
+            font-size: 18px;
+            line-height: 27px;
+          }
+          &_label {
+            font-size: 12px;
+            line-height: 18px;
           }
         }
       }

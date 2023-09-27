@@ -128,3 +128,58 @@
   }
   
 }
+
+@media (max-width: 768px) {
+  .servList {
+
+    &__in {
+      padding: 25px 0;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__body {
+
+      &_list {
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      &_item {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 35px 20px;
+
+        &_head {
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 15px;
+
+          &_title {
+            padding-left: 0;
+          }
+        }
+      }
+
+      &_ex {
+        flex-wrap: wrap;
+        padding: 0;
+        border: none;
+
+        &_label {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 35px;
+          text-align: center;
+        }
+
+        &_btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

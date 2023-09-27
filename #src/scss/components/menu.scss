@@ -1,0 +1,61 @@
+.menu {
+  position: fixed;  
+  top:0;
+  left: 0;
+  width: 225px;
+  background-color: #000;
+  height: 100%;
+  transform: translateX(-100%);
+  z-index: 10000;
+  @include ease-def;
+  display: flex;
+  flex-direction: column;
+
+
+  &__close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../img/icons/close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: 65px;
+    left: 30px;
+  }
+
+  &__main {
+    padding: 120px 30px 30px 30px;
+    
+
+    &_item {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 35px;
+      font-size: 14px;
+      a {
+        @include ease-def;
+        &:hover {
+          color: var(--red_1);
+        }
+      }
+    }
+
+    &_item.active {
+      a {
+        color: var(--red_1);
+      }
+    }
+  }
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    width: 100%;
+  }
+}
+

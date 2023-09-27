@@ -11,6 +11,11 @@
 @import './components/product.scss';
 @import './components/button.scss';
 @import './components/footer.scss';
+@import './components/titles.scss';
+@import './components/pageHead.scss';
+@import './components/category.scss';
+@import './components/menu.scss';
+@import './components/rangeSlider.scss';
 
 @import './pages/home/hero/homeHero.scss';
 @import './pages/home/adv/homeAdv.scss';
@@ -42,3 +47,9 @@
 @import './pages/serv/list/servList.scss';
 @import './pages/serv/how/servHow.scss';
 @import './pages/serv/faq/servFaq.scss';
+
+@import './pages/catalog/head/catalogHead.scss';
+@import './pages/catalog/list/catalogList.scss';
+@import './pages/catalog/vendors/catalogVendors.scss';
+@import './pages/catalog/keywords/catalogKeywords.scss';
+@import './pages/catalog/body/catalogBody.scss';

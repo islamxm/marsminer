@@ -5,9 +5,6 @@
   }
 
   &__title {
-    font-size: 96px;
-    color: var(--red_1);
-    line-height: 100px;
     margin-bottom: 100px;
   }
 
@@ -77,5 +74,41 @@
       }
     }
 
+  }
+}
+
+@media (max-width: 768px) {
+  .homeRevs {
+
+    &__in {
+      padding: 25px 0;
+    }
+
+    &__body {
+
+    }
+
+    &__item {
+      padding: 30px 15px;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+
+      &_main {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
+        &_avatar {
+          margin-bottom: 30px;
+        }
+        &_descr {
+          padding: 0;
+        }
+      }
+
+      &_media {
+        width: 100%;
+      }
+    }
   }
 }

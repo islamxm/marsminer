@@ -4,8 +4,7 @@
   }
 
   &__title {
-    margin-bottom: 100px;
-    font-size: 96px;
+    
   }
 
   &__body {
@@ -37,6 +36,36 @@
         font-size: 32px;
         font-weight: 700;
         color: #000;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .homeCase {
+
+    &__in {
+      padding: 25px 0;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__body {
+      margin-left: 0;
+      margin-right: 0;
+      flex-wrap: wrap;
+
+      &_item {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        &_label {
+          font-size: 18px;
+          line-height: 27px;
+          min-height: 100px;
+        }
       }
     }
   }

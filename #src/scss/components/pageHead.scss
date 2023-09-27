@@ -1,0 +1,58 @@
+.pageHead {
+  &__in {
+    padding: 50px 0;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  &__action {
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_btn {
+      padding: 22px;
+      max-width: 365px;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 5px;
+      text-transform: uppercase;
+      letter-spacing: 2.986px;
+      font-family: 'undertale_battle_font';
+      color: #000;
+      @include ease-def;
+
+      &:active {
+        transform: scale(.95);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pageHead {
+
+    &__in {
+      padding: 25px 0;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 18px;
+    }
+
+    &__action {
+      margin-top: 50px;
+    }
+  }
+}

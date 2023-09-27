@@ -6,7 +6,13 @@
 <body>
   @@include('./html/components/header.html')
   <main>
-    
+    <section class="first-block">
+      @@include('./html/components/pageHead.html', {
+        "title": "Майнинг под ключ",
+        "subtitle": "Майнинг под ключ от компании №1 в России и СНГ",
+        "buttonText": "получить консультацию"
+      })
+    </section>
     <section>
       @@include('./html/pages/key/main/keyMain.html')
     </section>

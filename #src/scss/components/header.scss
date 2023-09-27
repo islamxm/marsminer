@@ -27,11 +27,15 @@
   }
 
   &__logo {
-    width: 230px;
+    width: 330px;
     flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__logo.hide {
+    display: none;
   }
 
   &__part {
@@ -46,6 +50,7 @@
     align-items: center;
     padding: 0 25px;
     height: 60px;
+    width: 100%;
 
     &_btn {
       display: flex;
@@ -61,6 +66,7 @@
         justify-content: center;
         text-transform: uppercase;
         @include ease-def;
+        font-family: 'undertale_battle_font';
       }
 
       &_icon {
@@ -71,11 +77,26 @@
       }
     }
 
+    &_search.active {
+      .header__catalog_search_btn {
+        background-color: #fff;
+        svg {
+          rect {
+            stroke: #D9D9D9;
+          }
+        }
+      }
+      .header__catalog_search_input {
+        width: 100%;
+      }
+    }
+
     &_search {
       height: 100%;
       display: flex;
       align-items: center;
       @include ease-def;
+      width: 100%;
 
       &_btn {
         width: 56px;
@@ -84,14 +105,151 @@
         justify-content: center;
         cursor: pointer;
         height: 100%;
+        flex: 0 0  auto;
       }
 
       &_input {
         height: 100%;
         width: 0;
         background-color: #fff;
+        color: #000;
+        font-size: 18px;
+        line-height: 20px;
+        
+      }
+      &_actions {
+        align-items: center;
+        display: none;
+
+        &_item {
+          display: flex;
+          align-items: center;
+          margin-left: 30px;
+
+          &_icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            width: 30px;
+            height: 20px;
+            margin-right: 20px;
+
+            svg {
+              rect,path {
+                @include ease-def;
+              }
+            }
+          }
+          &_label {
+            @include ease-def;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+          } 
+
+          &:hover {
+            .header__catalog_search_actions_item_icon {
+              svg {
+                rect,path {
+                  fill: var(--red_1);
+                }
+              }
+            }
+            .header__catalog_search_actions_item_label {
+              color: var(--red_1)
+            }
+          }
+        }
       }
 
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    width: 100%;
+
+    &_item {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+
+      &:hover {
+        .header__contacts_item_text {
+          color: var(--red_1);
+        }
+      }
+
+      &_icon {
+        flex: 0 0 auto;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-right: 15px;
+      }
+
+      &_text {
+        @include ease-def;
+        text-transform: uppercase;
+      }
+    }
+
+    &_item.telegram {
+      .header__contacts_item_icon {
+        background-image: url('../../img/icons/telegram.svg');
+      }
+    }
+    &_item.whatsapp {
+      .header__contacts_item_icon {
+        background-image: url('../../img/icons/whatsapp.svg');
+      }
+    }
+    &_item.tel {
+      .header__contacts_item_icon {
+        background-image: url('../../img/icons/tel.svg');
+      }
+    }
+  }
+}
+
+.header.search-show {
+
+  .header__part.header__part-first {
+    // width: 70%;
+  }
+
+  .header__part.header__part-second {
+    width: 150px;
+  }
+  .header__catalog {
+    &_btn {
+      background-color: #9D241C;
+    }
+    &_search {
+
+      &_actions {
+        display: flex;
+      }
+    }
+  }
+
+  .header__contacts {
+
+    &_item {
+      &_icon {
+        margin: 0;
+      }
+      &_text {
+        display: none;
+      }
     }
   }
 }
@@ -99,5 +257,40 @@
 .header.active {
   &:after {
     height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    // display: none;
+
+    &__part.header__part-first {
+      .header__catalog {
+        display: none;
+      }
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__part.header__part-second {
+      display: flex;
+      
+      .header__contacts {
+        // justify-content: center;
+
+        &_item {
+          // margin: 0 20px;
+          margin-left: 40px;
+          &_icon {
+            margin: 0;
+          }
+          &_text {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }

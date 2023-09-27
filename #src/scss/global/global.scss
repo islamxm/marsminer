@@ -22,6 +22,11 @@ button,input {
   color: inherit;
 }
 
+input {
+  outline: none;
+  font-family: 'Anonymous Pro' !important; 
+}
+
 button {
   cursor: pointer;
   // @include ease-def;

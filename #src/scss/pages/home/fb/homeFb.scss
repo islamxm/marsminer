@@ -10,9 +10,9 @@
   }
 
   &__title {
-    font-size: 96px;
-    line-height: 100px;
-    padding-right: 20px;
+    // font-size: 96px;
+    // line-height: 100px;
+    // padding-right: 20px;
     width: 50%;
 
     span {
@@ -95,4 +95,34 @@
     }
   }
   
+}
+
+@media (max-width: 768px) {
+  .homeFb {
+
+    &__in {
+      padding: 25px 0;
+    }
+
+    &__body { 
+      flex-wrap: wrap;
+    }
+
+    &__title {  
+      width: 100%;
+      margin: 0;
+      margin-bottom: 80px;
+    }
+
+    &__form {
+      width: 100%;
+      margin: 0;
+      padding-left: 0;
+
+      &_action {
+        margin-top: 50px;
+        justify-content: center;
+      }
+    }
+  }
 }

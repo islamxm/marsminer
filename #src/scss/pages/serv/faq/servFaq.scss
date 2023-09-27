@@ -15,14 +15,53 @@
 
       &_head {
         padding: 30px 0;
+        @include ease-def;
+
+        &:hover {
+          color: var(--red_1);
+          cursor: pointer;
+        }
       }
 
       &_body {
+        height: 0;
+        overflow: hidden;
+        @include ease-def;
+
         &_text {
-          
+          padding-bottom: 50px;
         }
       }
     }
 
+    &_item.active {
+      .servFaq__body_item_head {
+        color: var(--red_1);
+      }
+
+      .servFaq__body_item_body {
+        &_text {
+
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .servFaq {
+    padding: 25px 0;
+
+    &__title {
+      margin-bottom: 35px;
+    }
+    &__body {
+      &_item {
+        &_head {
+          padding: 15px 0;
+        }
+      }
+    }
   }
 }
