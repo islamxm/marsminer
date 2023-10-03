@@ -121,3 +121,32 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .catalogBody {
+
+    &__in {
+      padding: 25px 0;
+    }
+
+    &__side {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+    }
+
+    &__main {
+      padding-left: 0;
+      width: unset;
+      margin-left: 0;
+      margin-right: 0;
+
+      &_item {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}

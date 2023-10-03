@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./html/global/head.html', {
+  "title": 'Cases - Marsminer'
+})
+<body>
+  @@include('./html/components/header.html')
+  <main>
+    <section class="first-block">
+      @@include('./html/pages/article/main/articleMain.html')
+    </section>
+    <section>
+      @@include('./html/pages/article/list/articleList.html')
+    </section>
+    <section>
+      @@include('./html/pages/article/list/articleBody.html')
+    </section>
+  </main>  
+  @@include('./html/components/footer.html')
+  <script src="js/app.min.js"></script>
+</body>
+</html>

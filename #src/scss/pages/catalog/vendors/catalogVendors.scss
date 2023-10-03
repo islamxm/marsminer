@@ -33,3 +33,24 @@
   }
 }
 
+
+@media (max-width: 768px) {
+  .catalogVendors {
+
+    &__in {
+
+    }
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &__body {
+
+      &_item {
+        width: calc((100% / 3) - 10px);
+      }
+
+    }
+  }
+}
