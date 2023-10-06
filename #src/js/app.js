@@ -6,7 +6,7 @@ import catalogFilter from './modules/catalogFilter.js';
 import rangeSlider from './modules/rangeSlider.js';
 import faq from './modules/faq.js';
 import heroParallax from './modules/heroParallax.js';
-
+import articleSliders from './modules/articleSliders.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   flsFuncs.isWebp();
@@ -17,4 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
   rangeSlider();
   faq();
   heroParallax();
+  articleSliders();
 })
+

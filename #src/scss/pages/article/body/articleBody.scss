@@ -5,10 +5,46 @@
   }
 
   &__top {
+    display: flex;
+    align-items: center;
 
     &_item {
-      
+      padding: 10px 0;
+      font-size: 32px;
+      font-weight: 700;
+      position: relative;
+      margin-right: 100px;
+      cursor: pointer;
+      @include ease-def;
+
+      &:hover {
+        color: var(--red_1);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: var(--red_1);
+        content: '';
+        @include ease-def;
+      }
     }
 
+    &_item.active {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__body {
+    padding: 30px 0;
   }
 }

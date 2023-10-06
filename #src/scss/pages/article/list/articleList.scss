@@ -20,6 +20,11 @@
     color: #000;
     margin-bottom: 15px;
     
+    &_body {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
     
     &_icon {
       width: 80px;
@@ -38,11 +43,12 @@
     &_name {
       font-size: 32px;
       font-weight: 700;
+      width: 20%;
     }
 
     &_labels {
-      width: 20%;
       padding: 0 50px;
+      width: 20%;
       &_item {
         font-size: 24px;
         margin-bottom: 5px;

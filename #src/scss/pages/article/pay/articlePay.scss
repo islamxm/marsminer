@@ -1,0 +1,29 @@
+.articlePay {
+  &__in {
+
+  }
+
+  &__body {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    ul {
+      padding-left: 15px;
+      margin-bottom: 25px;
+
+      li {
+        list-style: disc;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

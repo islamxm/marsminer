@@ -2978,6 +2978,35 @@ body footer {
   margin: 5px;
   flex: 0 0 auto;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.articleMain__main_card_thumbs {
+  height: 430px;
+  width: 160px;
+  flex: 0 0 auto;
+}
+.articleMain__main_card_thumbs_slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: flex;
+}
+.articleMain__main_card_slider {
+  width: 100%;
+}
+.articleMain__main_card_slider_slide {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: flex;
+  height: 550px;
+}
+.articleMain__main_card_slider_slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: flex;
 }
 .articleMain__main_center {
   display: flex;
@@ -3194,6 +3223,56 @@ body footer {
   opacity: 0;
 }
 
+@media (max-width: 768px) {
+  .articleMain__in {
+    padding: 25px 0;
+  }
+  .articleMain__title {
+    margin-bottom: 40px;
+  }
+  .articleMain__main {
+    flex-wrap: wrap;
+  }
+  .articleMain__main_card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+    min-height: unset;
+  }
+  .articleMain__main_card_slider_slide {
+    height: 400px;
+  }
+  .articleMain__main_center {
+    width: 100%;
+  }
+  .articleMain__main_center_main {
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .articleMain__main_center_ex {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 20px;
+  }
+  .articleMain__main_action {
+    width: 100%;
+  }
+  .articleMain__main_action_main {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+  }
+  .articleMain__main_action_b {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+  }
+  .articleMain__info {
+    margin-bottom: 45px;
+  }
+}
 .articleList__in {
   padding: 40px 0;
 }
@@ -3208,6 +3287,11 @@ body footer {
   border-radius: 5px;
   color: #000;
   margin-bottom: 15px;
+}
+.articleList__item_body {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 .articleList__item_icon {
   width: 80px;
@@ -3224,10 +3308,11 @@ body footer {
 .articleList__item_name {
   font-size: 32px;
   font-weight: 700;
+  width: 20%;
 }
 .articleList__item_labels {
-  width: 20%;
   padding: 0 50px;
+  width: 20%;
 }
 .articleList__item_labels_item {
   font-size: 24px;
@@ -3250,4 +3335,194 @@ body footer {
 
 .articleBody__in {
   padding: 40px 0;
+}
+.articleBody__top {
+  display: flex;
+  align-items: center;
+}
+.articleBody__top_item {
+  padding: 10px 0;
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+  margin-right: 100px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.articleBody__top_item:hover {
+  color: var(--red_1);
+}
+.articleBody__top_item:last-child {
+  margin-right: 0;
+}
+.articleBody__top_item:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--red_1);
+  content: "";
+  transition: all 0.2s ease;
+}
+.articleBody__top_item.active:after {
+  width: 100%;
+}
+.articleBody__body {
+  padding: 30px 0;
+}
+
+.articleDescr__in h3 {
+  margin-bottom: 35px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.articleDescr__in ul {
+  margin-bottom: 35px;
+  padding-left: 10px;
+}
+.articleDescr__in ul li {
+  list-style: disc;
+}
+.articleDescr__in p {
+  margin-bottom: 35px;
+}
+
+.articleRevs__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.articleRevs__top_action_btn {
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #000;
+  border-radius: 5px;
+  background: #FFF;
+  font-family: undertale_battle_font;
+  letter-spacing: 3.371px;
+  font-size: 18px;
+  line-height: normal;
+  transition: all 0.2s ease;
+}
+.articleRevs__top_action_btn:hover {
+  background-color: var(--red_1);
+  color: #fff;
+}
+.articleRevs__top_action_btn:active {
+  transform: scale(0.95);
+}
+.articleRevs__body_item {
+  padding: 30px 50px;
+  margin-bottom: 25px;
+  background-color: #1E1E1E;
+  border-radius: 12px;
+  border: 1px solid #424242;
+}
+.articleRevs__body_item:last-child {
+  margin-bottom: 0;
+}
+.articleRevs__body_item_name {
+  margin-bottom: 12px;
+  font-family: undertale_battle_font;
+  font-size: 18.73px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.371px;
+  text-transform: uppercase;
+}
+.articleRevs__body_item_stars {
+  margin-bottom: 12px;
+}
+.articleRevs__body_item_comment {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.articleRevs__body_item_action {
+  display: flex;
+  align-items: center;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.articleRevs__body_item_action_item {
+  margin: 0 20px;
+  color: #D9D9D9;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+.articleRevs__body_item_action_item:hover {
+  color: var(--red_1);
+}
+.articleRevs__body_item_action_item.articleRevs__body_item_action_item--minus {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  background-image: url("../../../../img/icons/minus.svg");
+}
+.articleRevs__body_item_action_item.articleRevs__body_item_action_item--plus {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  background-image: url("../../../../img/icons/plus.svg");
+}
+
+.articleChars__in {
+  max-width: 1160px;
+  width: 100%;
+}
+.articleChars__item {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px 0;
+  border-bottom: 1px solid #545454;
+  font-size: 32px;
+  line-height: 64px;
+}
+.articleChars__item_name {
+  width: 50%;
+  font-weight: 700;
+}
+.articleChars__item_value {
+  width: 50%;
+}
+
+.articleDel__body h3 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.articleDel__body p {
+  margin-bottom: 25px;
+}
+
+.articlePay__body {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+}
+.articlePay__body p {
+  margin-bottom: 25px;
+}
+.articlePay__body ul {
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+.articlePay__body ul li {
+  list-style: disc;
+  margin-bottom: 10px;
+}
+.articlePay__body ul li:last-child {
+  margin-bottom: 0;
 }

@@ -1,3 +1,5 @@
+
+
 //GLOBAL
 @import './global/mixins.scss';
 @import './fonts.scss';
@@ -57,3 +59,8 @@
 @import './pages/article/main/articleMain.scss';
 @import './pages/article/list/articleList.scss';
 @import './pages/article/body/articleBody.scss';
+@import './pages/article/descr/articleDescr.scss';
+@import './pages/article/revs/articleRevs.scss';
+@import './pages/article/chars/articleChars.scss';
+@import './pages/article/del/articleDel.scss';
+@import './pages/article/pay/articlePay.scss';
