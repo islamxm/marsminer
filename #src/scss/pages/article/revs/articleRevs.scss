@@ -112,3 +112,39 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .articleRevs {
+
+    &__top {
+      
+    }
+
+    &__body {
+      &_item {
+        padding: 25px;
+
+        &_comment {
+          font-size: 16px;
+          line-height: 21px;
+          margin-bottom: 25px;
+        }
+
+        &_action {
+          flex-wrap: wrap;
+
+          &_item {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 25px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

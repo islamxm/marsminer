@@ -14,9 +14,18 @@ export const path = {
         files: `${buildFolder}/files/`,
     },
     src: {
-        // jsModules: [
-        //     ``
-        // ],
+        jsModules: {
+          home: `${srcFolder}/js/pages/home.js`,
+          article: `${srcFolder}/js/pages/article.js`,
+          cases: `${srcFolder}/js/pages/cases.js`,
+          catalog: `${srcFolder}/js/pages/catalog.js`,
+          contacts: `${srcFolder}/js/pages/contacts.js`,
+          fw: `${srcFolder}/js/pages/fw.js`,
+          key: `${srcFolder}/js/pages/key.js`,
+          pay: `${srcFolder}/js/pages/pay.js`,
+          serv: `${srcFolder}/js/pages/serv.js`,
+          war: `${srcFolder}/js/pages/war.js`
+        },
         js: `${srcFolder}/js/app.js`,
         img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
         svg: `${srcFolder}/img/**/*.svg`,

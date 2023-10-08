@@ -345,13 +345,17 @@
 
     &__main {
       flex-wrap: wrap;
+      
       &_card {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
         padding: 20px;
         min-height: unset;
-
+        padding: 10px;
+        &_thumbs {
+          width: 100px;
+        }
         &_slider {
           &_slide {
             height: 400px;
@@ -394,7 +398,14 @@
     }
 
     &__calc {
-      
+      flex-wrap: wrap;
+      margin-left: 0;
+        margin-right: 0;
+      &_part {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: unset;
+      }
     }
   }
 }

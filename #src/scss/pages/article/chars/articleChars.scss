@@ -22,3 +22,17 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .articleChars {
+
+    &__item {
+      font-size: 18px;
+      line-height: 25px;
+
+      &_name {
+        padding-right: 15px;
+      }
+    }
+  }
+}

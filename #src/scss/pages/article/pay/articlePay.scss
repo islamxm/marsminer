@@ -27,3 +27,12 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .articlePay {
+
+    &__body {
+      font-size: 16px;
+    }
+  }
+}
