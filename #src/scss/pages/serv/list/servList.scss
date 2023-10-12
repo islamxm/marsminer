@@ -23,6 +23,8 @@
       border: 1px solid #fff;
       color: #DCDCDC;
       padding: 30px 60px;
+      display: flex;
+      flex-direction: column;
 
       &:nth-child(1) {
         .servList__body_item_head_icon {
@@ -83,8 +85,9 @@
 
       &_action {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: flex-start;
+        flex: 1 0 auto;
 
         &_btn {
           padding: 22px 40px;

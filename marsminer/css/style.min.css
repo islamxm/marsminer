@@ -2603,6 +2603,8 @@ body footer {
   border: 1px solid #fff;
   color: #DCDCDC;
   padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
 }
 .servList__body_item:nth-child(1) .servList__body_item_head_icon {
   background-image: url("../../../../img/icons/servlist-1.svg");
@@ -2646,8 +2648,9 @@ body footer {
 }
 .servList__body_item_action {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
+  flex: 1 0 auto;
 }
 .servList__body_item_action_btn {
   padding: 22px 40px;
