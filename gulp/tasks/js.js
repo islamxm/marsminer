@@ -23,6 +23,7 @@ export const js = () => {
                 pay: app.path.src.jsModules.pay,
                 serv: app.path.src.jsModules.serv,
                 war: app.path.src.jsModules.war,
+                blog: app.path.src.jsModules.blog
             },
             output: {
                 filename: '[name].min.js',

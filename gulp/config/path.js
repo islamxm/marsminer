@@ -24,7 +24,8 @@ export const path = {
           key: `${srcFolder}/js/pages/key.js`,
           pay: `${srcFolder}/js/pages/pay.js`,
           serv: `${srcFolder}/js/pages/serv.js`,
-          war: `${srcFolder}/js/pages/war.js`
+          war: `${srcFolder}/js/pages/war.js`,
+          blog: `${srcFolder}/js/pages/blog.js`
         },
         js: `${srcFolder}/js/app.js`,
         img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./html/global/head.html', {
+  "title": 'Блог - Marsminer'
+})
+<body>
+  @@include('./html/components/header.html')
+  @@include('./html/components/menu.html')
+  <main>
+    <section class="first-block">
+      @@include('./html/pages/blog/head/blogHead.html')
+    </section>
+    <section>
+        @@include('./html/pages/blog/body/blogBody.html')
+    </section>
+    <section>
+        @@include('./html/pages/home/fb/homeFb.html')
+      </section>
+      <section>
+        @@include('./html/pages/home/tg/homeTg.html')
+      </section>
+  </main>  
+  @@include('./html/components/footer.html')
+  <script src="./js/blog.min.js"></script>
+</body>
+</html>
