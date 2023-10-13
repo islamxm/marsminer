@@ -20,4 +20,5 @@ const searchToggle = () => {
   }
 }
 
+searchToggle()
 export default searchToggle;

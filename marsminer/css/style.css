@@ -3880,3 +3880,156 @@ body footer {
     line-height: 25px;
   }
 }
+.orderMain__in {
+  paddinG: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+.orderMain__body {
+  max-width: 590px;
+  width: 100%;
+}
+.orderMain__body_title {
+  margin-bottom: 40px;
+}
+.orderMain__body_form_item {
+  margin-bottom: 30px;
+}
+.orderMain__body_form_input {
+  padding: 10px 15px;
+  border-bottom: 0.5px solid #FFF;
+  width: 100%;
+  font-size: 24px;
+  line-height: 36px;
+}
+.orderMain__body_form_ex {
+  padding: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E6E6E6;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.orderMain__body_form_ex_counter {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.orderMain__body_form_ex_counter_total {
+  font-size: 24px;
+  line-height: 36px;
+  margin-right: 15px;
+}
+.orderMain__body_form_ex_counter_el {
+  display: flex;
+  align-items: center;
+  height: 44px;
+}
+.orderMain__body_form_ex_counter_btn {
+  width: 21px;
+  border: 1px solid #fff;
+  height: 100%;
+  transition: all 0.2s ease;
+}
+.orderMain__body_form_ex_counter_btn:hover {
+  color: #fff;
+  background-color: var(--red_1);
+  border-color: var(--red_1);
+}
+.orderMain__body_form_ex_counter_val {
+  margin: 0 7px;
+  border: 1px solid #fff;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.orderMain__body_form_action {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+.orderMain__body_form_action_back {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  background-image: url("../../../../img/icons/back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.orderMain__body_form_action_send {
+  max-width: 415px;
+  width: 100%;
+  border: 5px solid var(--red_1);
+  font-family: "undertale_battle_font";
+  font-size: 19px;
+  letter-spacing: 3.371px;
+  text-transform: uppercase;
+  line-height: normal;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: var(--red_1);
+  transition: all 0.2s ease;
+}
+.orderMain__body_form_action_send:hover {
+  background-color: var(--red_1);
+  color: #fff;
+}
+.orderMain__body_form_link {
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+}
+.orderMain__body_form_link a {
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+.orderMain__body_form_link a:hover {
+  color: var(--red_1);
+}
+
+@media (max-width: 768px) {
+  .orderMain__in {
+    padding-top: 0;
+  }
+  .orderMain__body_title {
+    margin-bottom: 30px;
+  }
+  .orderMain__body_form_item {
+    margin-bottom: 20px;
+  }
+  .orderMain__body_form_ex {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .orderMain__body_form_ex_counter {
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .orderMain__body_form_ex_counter_total {
+    order: -1;
+    margin-bottom: 15px;
+  }
+  .orderMain__body_form_ex_counter_el {
+    width: 100%;
+  }
+  .orderMain__body_form_ex_counter_val {
+    width: 100%;
+  }
+  .orderMain__body_form_ex_counter_btn {
+    width: 50px;
+  }
+  .orderMain__body_form_action_back {
+    display: none;
+  }
+}

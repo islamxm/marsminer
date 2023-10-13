@@ -25,7 +25,14 @@ export const path = {
           pay: `${srcFolder}/js/pages/pay.js`,
           serv: `${srcFolder}/js/pages/serv.js`,
           war: `${srcFolder}/js/pages/war.js`,
-          blog: `${srcFolder}/js/pages/blog.js`
+          blog: `${srcFolder}/js/pages/blog.js`,
+          order: `${srcFolder}/js/pages/order.js`,
+
+          //components
+          header: `${srcFolder}/js/modules/header.js`,
+          menu: `${srcFolder}/js/modules/menu.js`,
+          search: `${srcFolder}/js/modules/search.js`,
+          functions: `${srcFolder}/js/modules/functions.js`,
         },
         js: `${srcFolder}/js/app.js`,
         img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,

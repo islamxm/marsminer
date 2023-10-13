@@ -16,4 +16,6 @@ const menuToggle = () => {
   }
 }
 
+menuToggle()
+
 export default menuToggle;

@@ -17,3 +17,5 @@ export function isWebp() {
         }
     });
 }
+
+isWebp()
