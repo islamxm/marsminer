@@ -9,6 +9,10 @@ const articleSliders = () => {
       slidesPerView:3,
       direction: 'vertical',
       watchSlidesProgress: true,
+      navigation: {
+        prevEl: '.articleMain__main_card_thumbs_nav-prev',
+        nextEl: '.articleMain__main_card_thumbs_nav-next'
+      }
     })
     const mainSwiper = new Swiper(sliderEl, {
       spaceBetween: 10,
